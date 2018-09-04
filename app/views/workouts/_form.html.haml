@@ -1,0 +1,12 @@
+= form_for @workout do |f|
+  %p
+    = f.label :workout
+    = f.text_field :workout
+  %p
+    = f.label :mood
+    = f.text_field :mood
+  %p
+    = f.label :length
+    = f.text_field :length
+  %p= f.datetime_select(:date) 
+  %p= f.submit
