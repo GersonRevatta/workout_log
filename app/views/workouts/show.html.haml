@@ -1,3 +1,5 @@
 %p= @workout.workout
 = link_to 'edit', edit_workout_path(@workout)
 = link_to 'delete', workout_path, method: :delete, data: { confirm: 'Are you sure?'}
+= render @workout.exercises
+= render 'exercises/form'

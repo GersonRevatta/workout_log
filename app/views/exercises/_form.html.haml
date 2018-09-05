@@ -1,0 +1,11 @@
+= form_for ([@workout, @workout.exercises.new]) do |f|
+  %p
+    = f.label 'Nombre'
+    = f.text_field :name
+  %p
+    = f.label :sets
+    = f.number_field :sets
+  %p
+    = f.label :reps
+    = f.number_field :reps
+  %p= f.submit
